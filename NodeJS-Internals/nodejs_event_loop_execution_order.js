@@ -38,3 +38,8 @@ that's the deterministic ordering guaranteed
 when you're already in the poll phase. 
 At the top level (2 vs 3), 
 the order can vary between runs.*/
+
+/*Golden Rule For NodeJS Event Loop Execution Priority : */
+
+/* sync code → nextTick → promises → timers → I/O → setImmediate → close
+              ↑_____ microtasks flush between every phase _____↑            */
