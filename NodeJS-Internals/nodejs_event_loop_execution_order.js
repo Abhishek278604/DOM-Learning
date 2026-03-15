@@ -19,8 +19,7 @@ fs.readFile(__filename, () => {
 console.log('11: sync again');
 
 
-// The output will be:
-// ```
+// Output
 // 1: sync
 // 11: sync again
 // 5: nextTick
