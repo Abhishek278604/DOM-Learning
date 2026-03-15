@@ -31,3 +31,10 @@ console.log('11: sync again');
 // 10: promise inside I/O
 // 8: setImmediate inside I/O
 // 7: setTimeout inside I/O
+
+/*Notice how inside the I/O callback, 
+setImmediate (8) always beats setTimeout (7) — 
+that's the deterministic ordering guaranteed 
+when you're already in the poll phase. 
+At the top level (2 vs 3), 
+the order can vary between runs.*/
