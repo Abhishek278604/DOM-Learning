@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('fs'); // This is Top Level Code like so executed at start in event loop first befor '1:sync'
 
 console.log('1: sync');
 
