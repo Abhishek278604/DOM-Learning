@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title id="title">Document</title>
+</head>
+<body>
+    <h1 id="heading1">Hellow World</h1>
+    <p class="para" id="bpara1">
+        <h1 id="bpara1h1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, suscipit?</h1>
+    </p>
+    <p class="para" id="bpara2">
+        <h1 id="bpara2h1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, suscipit?</h1>
+    </p>
+    <p class="para" id="bpara3">
+        <h1 id="bpara3h1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, suscipit?</h1>
+    </p>
+    <p class="para" id="bpara4">
+        <h1 id="bpara4h1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, suscipit?</h1>
+    </p>
+
+    <ul id="list-container" class="list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <script>
+        const listItems = document.querySelectorAll("#list-container li")
+        const ul = document.getElementById("list-container")
+        ul.innerHTML += "<li>item 4</li>"
+        console.log(listItems.length)
+    </script>
+</body>
+</html>
