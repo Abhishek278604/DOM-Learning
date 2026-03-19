@@ -1,0 +1,174 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#121212;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80vh;
+    background:#1e1e1e;
+    padding:50px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.input-box{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+input{
+    flex:1;
+    padding:10px;
+    border:none;
+    border-radius:6px;
+    outline:none;
+    background:#2a2a2a;
+    color:white;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:6px;
+    background:#4caf50;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#43a047;
+}
+
+#removeAllBtn {
+    background: #e53935;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+ 
+#removeAllBtn:hover {
+    background: #c62828;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+    margin-top:20px;
+    flex:1;
+    overflow-y:auto;
+}
+
+ul::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+ul::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 3px;
+}
+ 
+ul::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 3px;
+}
+ 
+ul::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
+
+li{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    background:#2a2a2a;
+    padding:10px;
+    border-radius:6px;
+    margin-top:10px;
+}
+
+.item-num{
+    color:#4caf50;
+    font-weight:bold;
+    margin-right:8px;
+    flex-shrink:0;
+}
+
+li .item-text {
+    flex: 1;
+    text-align: left;
+    cursor: default;
+    user-select: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-height: 4.5em;
+    overflow-y: auto;
+    line-height: 1.5;
+}
+
+li .item-text::-webkit-scrollbar {
+    width: 4px;
+}
+
+li .item-text::-webkit-scrollbar-track {
+    background: #2a2a2a;
+    border-radius: 2px;
+}
+
+li .item-text::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 2px;
+}
+ 
+li .item-text.editable {
+    cursor: text;
+    background: #3a3a3a;
+    padding: 4px 8px;
+    border-radius: 4px;
+    outline: none;
+    user-select: text;
+}
+ 
+.btn-group {
+    display: flex;
+    gap: 6px;
+    margin-left: 10px;
+}
+ 
+.edit {
+    background: #fb8c00;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+ 
+.edit:hover {
+    background: #ef6c00;
+}
+
+.delete{
+    background:#e53935;
+    border:none;
+    color:white;
+    padding:5px 10px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.delete:hover{
+    background:#c62828;
+}
